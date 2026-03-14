@@ -1,0 +1,30 @@
+<persistence xmlns="https://jakarta.ee/xml/ns/persistence"
+             version="3.0">
+
+    <persistence-unit name="abes">
+
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+
+        <class>com.abes.entity.Customer</class>
+        <class>com.abes.entity.Order</class>
+        
+        
+        
+        
+        
+
+        <properties>
+
+            <property name="jakarta.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/abesdb"/>
+            <property name="jakarta.persistence.jdbc.driver" value="org.postgresql.Driver"/>
+            <property name="jakarta.persistence.jdbc.user" value="postgres"/>
+            <property name="jakarta.persistence.jdbc.password" value="Rish@1810"/>
+
+            <property name="hibernate.hbm2ddl.auto" value="update"/>
+            <property name="hibernate.show_sql" value="true"/>
+
+        </properties>
+
+    </persistence-unit>
+
+</persistence>
